@@ -11,6 +11,7 @@ CRACK FILE LINK :
 ```
 wget https://github.com/guywiththecrack/jira-crack/blob/master/atlassian-extras-3.4.6.jar
 ```
+*MAKE SURE THIS FILE IS AVAILABLE IN YOUR DIR YOU WORK* 
 
 after yoi copy docker file creat it : 
 ```
