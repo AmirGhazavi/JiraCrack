@@ -21,7 +21,7 @@ postgres:
 image: postgres:13
 container_name: postgres
 ports:
-- '5432:5432' # Maps host port 5433 to container port 5432
+- '5432:5432'
 environment:
 - POSTGRES_DB=jiradb
 - POSTGRES_USER=jirauser
