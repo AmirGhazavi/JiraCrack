@@ -8,14 +8,12 @@ ports:
 depends_on:
 - postgres
 environment:
-- ATL_JDBC_URL=jdbc:postgresql://172.20.20.37:5432/jiradb?tcpKeepAlive=true&socketTimeout=240
+- ATL_JDBC_URL=jdbc:postgresql://#your url postgres/jiradb?tcpKeepAlive=true&socketTimeout=240
 - ATL_JDBC_USER=jirauser
 - ATL_JDBC_PASSWORD=jirapassword
 # Ensure tcpKeepAlive is set to true to avoid the warning
-# 2024-08-28 06:34:59,101+0000 http-nio-8080-exec-20 WARN anonymous 394x213x1 u27sba 172.25.0.1 /secure/SetupDatabase!connectionCheck.jspa [c.a.j.config.database.DatabaseConfigHandler] Recommended >
 volumes:
-- /var/dockervols/jira/jira_home_data:/var/jira:Z
-- /var/dockervols/jira/jiraVolume:/var/atlassian/application-data/jira:Z
+- jira_data:/var/atlassian/application-data/jira
 networks:
 - jira-net
 
