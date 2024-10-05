@@ -20,4 +20,3 @@ EXPOSE 8080
 
 #Start Jira in the foreground
 CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
-===
